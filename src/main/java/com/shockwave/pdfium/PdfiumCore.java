@@ -37,8 +37,6 @@ public class PdfiumCore {
 
     private native long nativeOpenMemDocument(byte[] data, String password);
 
-    private native long nativeOpenMemDocument(int data, String password);
-
     private native void nativeCloseDocument(long docPtr);
 
     private native int nativeGetPageCount(long docPtr);
